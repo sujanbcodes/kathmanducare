@@ -1,0 +1,9 @@
+[
+    {"name": "Aditi Sharma", "role": "Principal", "subjects": "Administration", "email": "aditi@example.com"},
+    {"name": "Bishal Koirala", "role": "Mathematics Teacher", "subjects": "Mathematics", "email": "bishal@example.com"},
+    {"name": "Chitra Rai", "role": "Science Teacher", "subjects": "Physics", "email": "chitra@example.com"},
+    {"name": "Deepak Gurung", "role": "English Teacher", "subjects": "English", "email": "deepak@example.com"},
+    {"name": "Esha Thapa", "role": "History Teacher", "subjects": "History", "email": "esha@example.com"},
+    {"name": "Farhan Khan", "role": "ICT Coordinator", "subjects": "Computer Science", "email": "farhan@example.com"}
+]
+

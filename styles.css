@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #003366;
+    --primary-dark: #00264d;
+    --accent-color: #ffcc00;
+}
+
 /* Body styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -22,7 +28,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #1a1a1a;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 20px 0;
    
@@ -55,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: var(--accent-color);
 }
 
 /* Hero section styles */
@@ -118,7 +124,7 @@ nav ul li a:hover {
 }
 
 .service-card h3 {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 12px 0; /* Increase padding for better readability */
     margin: 0;
@@ -135,64 +141,6 @@ nav ul li a:hover {
 }
 
 
-
-.become-a-carer {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.become-a-carer h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.become-a-carer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.become-a-carer .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.become-a-carer form {
-    margin-top: 20px;
-}
-
-.become-a-carer label {
-    display: block;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.become-a-carer input[type="text"],
-.become-a-carer input[type="email"],
-.become-a-carer input[type="tel"],
-.become-a-carer input[type="number"],
-.become-a-carer textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.become-a-carer button {
-    padding: 12px 24px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-}
-
-.become-a-carer button:hover {
-    background-color: #555;
-}
 
 /* Your Query section styles */
 .your-query {
@@ -468,7 +416,7 @@ h1 {
 
 /* Footer styles */
 footer {
-    background-color: #1a1a1a;
+    background-color: var(--primary-color);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -571,7 +519,7 @@ footer {
 }
 
 #chat-header {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 10px;
     display: flex;
@@ -594,7 +542,7 @@ footer {
 }
 
 .bot-message {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 10px;
     margin-bottom: 5px;
@@ -611,7 +559,7 @@ footer {
 
 #send-button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -620,7 +568,7 @@ footer {
 }
 
 #send-button:hover {
-    background-color: #45a049;
+    background-color: var(--primary-dark);
 }
 
 /* Minimized Chatbot */
@@ -629,4 +577,91 @@ footer {
 .chatbot.minimized #user-input,
 .chatbot.minimized #send-button {
     display: none;
+}
+
+/* Additional styles for school site */
+.page {
+    padding: 40px 0;
+}
+
+.cta,
+.portal-button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.cta:hover,
+.portal-button:hover {
+    background: var(--primary-dark);
+}
+
+.highlights {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.news-preview ul,
+.events-preview ul,
+#news-full,
+#events-full {
+    list-style: none;
+    padding: 0;
+}
+
+#news-full li,
+#events-full li,
+.news-preview li,
+.events-preview li {
+    margin-bottom: 10px;
+}
+
+.staff-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.staff-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.simple-form {
+    max-width: 500px;
+}
+
+.simple-form input,
+.simple-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.simple-form button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.simple-form button:hover {
+    background: var(--primary-dark);
 }

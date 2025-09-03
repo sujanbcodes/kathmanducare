@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - EDUHUB HIGHER SECONDARY SCHOOL</title>
+    <title>Admissions - EDUHUB HIGHER SECONDARY SCHOOL</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts/forms.js"></script>
 </head>
@@ -15,13 +15,13 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
                     <li><a href="academics.html">Academics</a></li>
                     <li><a href="staff.html">Staff</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="EDUTRACK_URL_HERE" class="portal-button">Portal</a></li>
                 </ul>
             </nav>
@@ -29,22 +29,26 @@
     </header>
 
     <main class="container page">
-        <h2>Contact Us</h2>
-        <p>Address: 123 Education Street, Kathmandu</p>
-        <p>Phone: 01-5555555</p>
-        <p>Email: info@eduhub.edu.np</p>
+        <h2>Admissions</h2>
+        <p>We welcome applications from students of diverse backgrounds. Download our <a href="assets/prospectus.pdf">prospectus</a> and complete the inquiry form below.</p>
 
-        <form id="contact-form" class="simple-form">
-            <label for="cname">Name</label>
-            <input type="text" id="cname" name="name" required>
+        <form id="admissions-form" class="simple-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="cemail">Email</label>
-            <input type="email" id="cemail" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="cmessage">Message</label>
-            <textarea id="cmessage" name="message" required></textarea>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
 
-            <button type="submit">Send</button>
+            <label for="interest">Area of Interest</label>
+            <input type="text" id="interest" name="interest">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
             <p id="form-status" aria-live="polite"></p>
         </form>
     </main>
