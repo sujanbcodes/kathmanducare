@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elderly Care Center</title>
+    <title>EDUHUB HIGHER SECONDARY SCHOOL</title>
+    <meta name="description" content="EDUHUB Higher Secondary School – inspiring students with modern academics.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="#top">
+    <header>
         <div class="container">
-            <h1 class="logo"><a href="index.html">Kathmandu Care</a></h1>
+            <h1 class="logo"><a href="index.html">EDUHUB HIGHER SECONDARY SCHOOL</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#become-a-carer" class="join-button">Join Us</a></li>
-
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="EDUTRACK_URL_HERE" class="portal-button">Portal</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,110 +30,49 @@
 
     <section class="hero">
         <div class="container">
-            <h2>Welcome to Our Elderly Care Center</h2>
-            <p>Providing compassionate care for seniors</p>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <a href="assisted-living.html">
-                        <img src="service1.jpg" alt="Assisted Living">
-                        <h3>Assisted Living</h3>
-                    </a>
-                </div>
-                <div class="service-card">
-                    <a href="memory-care.html">
-                        <img src="service2.jpg" alt="Memory Care">
-                        <h3>Memory Care</h3>
-                    </a>
-                </div>
-                <div class="service-card">
-                    <a href="rehabilitation-therapy.html">
-                        <img src="service3.jpg" alt="Rehabilitation Therapy">
-                        <h3>Rehabilitation Therapy</h3>
-                    </a>
-                </div>
-                <div class="service-card">
-                    <a href="skilled-nursing-care.html">
-                        <img src="service4.jpg" alt="24/7 Skilled Nursing Care">
-                        <h3>24/7 Skilled Nursing Care</h3>
-                    </a>
-                </div>
+            <h2>Shaping Futures with Excellence</h2>
+            <p>Quality education for every student.</p>
+            <div class="cta-buttons">
+                <a href="admissions.html" class="cta">Apply Now</a>
+                <a href="EDUTRACK_URL_HERE" class="cta">Parent/Student Portal</a>
             </div>
         </div>
     </section>
-    <section id="become-a-carer" class="join-us">
+
+    <section id="highlights" class="highlights">
         <div class="container">
-            <h2>Join Us</h2>
-            <p>If you have a passion for caring for the elderly, we'd love to have you join our team.</p>
-            <!-- Updated link to "Become a Carer" page -->
-            <a href="become-a-carer.html" class="join-button">Become a Carer</a>
-        </div>
-
-        <section class="your-query">
-            <div class="container">
-                <h2>Your query</h2>
-                <form action="query.php" method="post">
-                    <!-- Add the hidden input field for QueryID -->
-                    <input type="hidden" name="QueryID" value="1"> <!-- Replace "123" with the actual QueryID -->
-        
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-        
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-        
-                    <label for="Message">Message:</label>
-                    <textarea id="Message" name="Message" required></textarea>
-        
-                    <button type="submit">Send</button>
-                </form>
+            <div class="highlight">
+                <h3>Academics</h3>
+                <p>Explore our diverse curriculum and programs.</p>
             </div>
-        </section>
-    
+            <div class="highlight">
+                <h3>Facilities</h3>
+                <p>Modern classrooms, labs and sports grounds.</p>
+            </div>
+        </div>
+    </section>
 
-    
+    <section id="latest-news" class="news-preview">
+        <div class="container">
+            <h2>Latest News</h2>
+            <ul id="news-list"></ul>
+        </div>
+    </section>
+
+    <section id="upcoming-events" class="events-preview">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul id="events-list"></ul>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Kathmandu Care. All rights reserved.</p>
+            <p>&copy; 2024 EDUHUB HIGHER SECONDARY SCHOOL. All rights reserved.</p>
         </div>
     </footer>
-    <!to go to top>
-    <script>
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
-    </script>
-    <script>
-        // JavaScript to handle redirection to the index page with the anchor
-        document.addEventListener("DOMContentLoaded", function() {
-            var servicesButton = document.querySelector('a[href="index.html#services"]');
-            if (servicesButton) {
-                servicesButton.addEventListener("click", function(event) {
-                    event.preventDefault();
-                    window.location.href = "index.html#services";
-                });
-            }
-        });
-    </script>
-    <section class="chatbot" id="chatbot">
-        <div id="chat-header">
-            <span>Chatbot</span>
-        </div>
-        <div id="chatbot-messages" class="chat-history"></div>
-        <input type="text" id="user-input" placeholder="Ask me anything...">
-        <button id="send-button">Send</button>
-    </section>
-    
-    <script src="chatbot.js"></script
-    
+
+    <script src="scripts/home.js"></script>
 </body>
 </html>
+
